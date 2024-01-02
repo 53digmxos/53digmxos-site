@@ -34,7 +34,7 @@ div.header {
 
 div.links {
     flex: 2;
-    max-width: 30%;
+    max-width: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +46,7 @@ a.headerLink, a.placeholderLink {
     color: white;
     text-decoration-line: none;
     font-family: 'Oxanium';
-    font-size: 2.5rem;
+    font-size: 2.5vw;
 }
 
 a.headerLink:hover {
@@ -57,7 +57,7 @@ a.placeholderLink {
 }
 
 .logo_container {
-    max-width: 20%;
+    max-width: 20rem;
 }
 #logo {
     max-width: 100%;

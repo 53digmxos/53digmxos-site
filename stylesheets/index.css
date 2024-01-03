@@ -14,6 +14,7 @@
 * {
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 html, body {
@@ -30,6 +31,22 @@ div.header {
     width: 100%;
     background-color: var(--dark-primary-background);
     box-shadow: 0rem 0.35rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+div.container {
+    width: 100%;
+    margin: 5rem 0 0 0;
+    font-size: 1.25rem;
+}
+
+div.demoreel {
+    margin: auto;
+    max-width: 66.666%;
+    min-width: 44%;
+    min-height: 20rem;
+    max-height: 25rem;
+    background-color: var(--dark-primary-background);
+    border-radius: 1rem;
 }
 
 div.links {

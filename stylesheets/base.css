@@ -9,6 +9,7 @@
 :root {
     --primary-background: rgb(67, 68, 71);
     --dark-primary-background: rgb(57, 58, 60);
+    --main-text-color: rgba(255, 255, 255, 0.5);
 }
 
 * {

@@ -16,6 +16,10 @@ div.demoreel * {
     text-align: center;
 }
 
-div.demoreel p {
+div.demoreel * {
     color: var(--main-text-color);
+}
+
+div.demoreel p a:hover {
+    color: lightcoral;
 }

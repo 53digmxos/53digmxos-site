@@ -10,6 +10,9 @@
     --primary-background: rgb(67, 68, 71);
     --dark-primary-background: rgb(57, 58, 60);
     --main-text-color: rgba(255, 255, 255, 0.5);
+    --title-text-color: rgba(255, 255, 255, 0.75);
+    --footer-height: 12rem;
+    --footer-height-mobile: 24rem;
 }
 
 * {
@@ -35,6 +38,15 @@ div.header {
     box-shadow: 0rem 0.35rem 0.25rem rgba(0, 0, 0, 0.25);
 }
 
+div.logo_container {
+    flex: 1;
+    max-width: 20rem;
+}
+#logo {
+    max-width: 100%;
+    margin: 1rem;
+}
+
 div.links {
     flex: 2;
     max-width: 40rem;
@@ -53,18 +65,10 @@ a.headerLink, a.placeholderLink {
 }
 
 a.headerLink:hover {
-    color: lightgray;
+    color: lightcoral;
 }
 a.placeholderLink {
     color: gray;
-}
-
-.logo_container {
-    max-width: 20rem;
-}
-#logo {
-    max-width: 100%;
-    margin: 1rem;
 }
 
 div.container {
@@ -73,9 +77,86 @@ div.container {
     font-size: 1.25rem;
 }
 
+div.footer {
+    width: 100%;
+    margin-top: 5rem;
+    background-color: var(--dark-primary-background);
+    box-shadow: 0rem -0.35rem 0.25rem rgba(0, 0, 0, 0.25);
+    bottom: 0;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    padding: 0.5rem;
+    max-height: var(--footer-height);
+    width: 75%;
+    margin: auto;
+}
+
+footer div ul::before {
+    display: block;
+    font-weight: bold;
+    font-size: 150%;
+    width: 100%;
+    content: attr(title);
+    color: var(--title-text-color);
+}
+
+footer div ul li {
+    display: block;
+    color: var(--main-text-color);
+}
+
+
+.f-left, .f-right{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 0rem;
+    max-height: var(--footer-height);
+    width: 33%;
+}
+.f-left {
+    flex: 1;
+}
+.f-right {
+    flex: 2;
+}
+
+footer * ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.f-left * {
+    text-align: left;
+}
+
+footer * ul li {
+    width: 50%;
+    line-height: 1.5rem;
+    font-size: 75%;
+}
+
 @media only screen and (max-width: 974px) {
     a.headerLink, a.placeholderLink {
         font-size: 4.5vw;
         margin: 0 4vw;
+    }
+}
+@media only screen and (max-width: 1364px) {
+    .f-right, .f-left, footer {
+        max-height: var(--footer-height-mobile);
+    }
+    footer * ul li {
+        width: 100%;
     }
 }

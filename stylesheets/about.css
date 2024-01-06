@@ -17,12 +17,11 @@ div.about {
     box-shadow: 0.25rem 0.5rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 
-div.about p, div.about p * {
-    color: rgba(255, 255, 255, 0.5);
+div.about p, div.about p *, #line {
+    color: var(--main-text-color);
 }
 
 #line {
-    color: var(--main-text-color);
     border-color: var(--main-text-color);
     background-color: var(--main-text-color);
 }
